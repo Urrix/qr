@@ -1,0 +1,109 @@
+/* Contenedor general */
+.qr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f5;
+  padding: 20px;
+}
+
+/* Tarjeta para el formulario y el QR */
+.qr-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Estilos para cada grupo de formulario */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Etiqueta */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+/* Input de texto */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border 0.3s ease;
+}
+
+/* Hover y focus en los inputs */
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Botón de enviar */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en el botón */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Botón deshabilitado */
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Estilos para el código QR */
+.qr-code {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Estilo del QR generado */
+ngx-qrcode {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 500px) {
+  .qr-card {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
